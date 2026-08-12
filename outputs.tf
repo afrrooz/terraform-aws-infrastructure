@@ -1,0 +1,48 @@
+# outputs.tf
+
+# VPC outputs
+output "vpc_id" {
+  description = "VPC ID"
+  value       = module.vpc.vpc_id
+}
+
+# Public subnet output
+output "public_subnet_id" {
+  description = "Public subnet ID"
+  value       = module.vpc.public_subnet_id
+}
+
+# IAM outputs
+output "iam_role_name" {
+  description = "IAM role name"
+  value       = module.iam.role_name
+}
+
+# EC2 outputs
+output "ec2_instance_id" {
+  description = "EC2 instance ID"
+  value       = module.ec2.instance_id
+}
+
+# EC2 public IP output
+output "ec2_public_ip" {
+  description = "EC2 public IP"
+  value       = module.ec2.public_ip
+}
+
+# Security group output
+output "security_group_id" {
+  description = "EC2 security group ID"
+  value       = module.ec2.security_group_id
+}
+
+# S3 outputs
+output "s3_bucket_name" {
+  description = "S3 bucket name"
+  value       = module.s3.bucket_id
+}
+
+output "s3_bucket_arn" {
+  description = "S3 bucket ARN"
+  value       = module.s3.bucket_arn
+}
