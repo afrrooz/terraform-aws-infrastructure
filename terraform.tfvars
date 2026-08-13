@@ -22,3 +22,6 @@ ssh_cidr = "49.43.234.50/32"
 # S3 module variables
 bucket_name = "afrrooz-terraform-devops-2026"
 environment = "dev"
+
+# EC2 key pair name
+key_name = "devops-key"

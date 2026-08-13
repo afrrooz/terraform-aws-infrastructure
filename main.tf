@@ -48,6 +48,7 @@ module "ec2" {
   instance_profile_name = module.iam.instance_profile_name
   instance_name         = var.instance_name
   ssh_cidr              = var.ssh_cidr
+  key_name              = var.key_name
 }
 
 #calling s3 module
