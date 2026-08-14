@@ -7,11 +7,16 @@ output "vpc_id" {
 }
 
 # Public subnet output
-output "public_subnet_id" {
-  description = "Public subnet ID"
-  value       = module.vpc.public_subnet_id
+output "public_subnet_ids" {
+  description = "IDs of the public subnets"
+  value       = module.vpc.public_subnet_ids
 }
 
+# Private subnet output
+output "private_subnet_ids" {
+  description = "IDs of the private subnets"
+  value       = module.vpc.private_subnet_ids
+}
 # IAM outputs
 output "iam_role_name" {
   description = "IAM role name"
