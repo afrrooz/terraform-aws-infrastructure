@@ -44,7 +44,7 @@ key_name = "devops-key"
 cluster_name       = "egarrage-eks"
 kubernetes_version = "1.33"
 
-node_instance_type = "t3.medium"
+node_instance_type = "t3.micro"
 
 desired_size = 2
 min_size     = 2
