@@ -66,3 +66,33 @@ variable "key_name" {
   description = "EC2 key pair name"
   type        = string
 }
+
+variable "cluster_name" {
+  description = "EKS cluster name"
+  type        = string
+}
+
+variable "kubernetes_version" {
+  description = "EKS Kubernetes version"
+  type        = string
+}
+
+variable "node_instance_type" {
+  description = "EKS worker node instance type"
+  type        = string
+}
+
+variable "desired_size" {
+  description = "Desired number of EKS worker nodes"
+  type        = number
+}
+
+variable "min_size" {
+  description = "Minimum number of EKS worker nodes"
+  type        = number
+}
+
+variable "max_size" {
+  description = "Maximum number of EKS worker nodes"
+  type        = number
+}

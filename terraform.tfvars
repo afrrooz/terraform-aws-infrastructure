@@ -39,3 +39,13 @@ environment = "dev"
 
 # EC2 key pair name
 key_name = "devops-key"
+
+# EKS module variables
+cluster_name       = "egarrage-eks"
+kubernetes_version = "1.33"
+
+node_instance_type = "t3.medium"
+
+desired_size = 2
+min_size     = 2
+max_size     = 3
