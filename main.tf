@@ -72,3 +72,13 @@ module "s3" {
   bucket_name = var.bucket_name
   environment = var.environment
 }
+
+#calling ecr module
+module "ecr" {
+  source = "git::https://github.com/afrrooz/terraform-aws-ecr.git"
+
+  repository_names = [
+    "egarrage-frontend",
+    "egarrage-backend"
+  ]
+}

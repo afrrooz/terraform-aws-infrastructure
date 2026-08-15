@@ -51,3 +51,9 @@ output "s3_bucket_arn" {
   description = "S3 bucket ARN"
   value       = module.s3.bucket_arn
 }
+
+# ECR outputs
+output "ecr_repository_urls" {
+  description = "ECR repository URLs"
+  value       = module.ecr.repository_urls
+}

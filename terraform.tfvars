@@ -46,6 +46,6 @@ kubernetes_version = "1.33"
 
 node_instance_type = "t3.micro"
 
-desired_size = 2
-min_size     = 2
-max_size     = 3
+desired_size = 1
+min_size     = 1
+max_size     = 1
