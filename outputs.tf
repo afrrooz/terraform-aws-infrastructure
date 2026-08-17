@@ -57,3 +57,19 @@ output "ecr_repository_urls" {
   description = "ECR repository URLs"
   value       = module.ecr.repository_urls
 }
+
+# RDS outputs
+output "rds_endpoint" {
+  description = "RDS PostgreSQL endpoint"
+  value       = module.rds.db_endpoint
+}
+
+output "rds_address" {
+  description = "RDS PostgreSQL hostname"
+  value       = module.rds.db_address
+}
+
+output "rds_port" {
+  description = "RDS PostgreSQL port"
+  value       = module.rds.db_port
+}

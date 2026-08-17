@@ -82,3 +82,18 @@ module "ecr" {
     "egarrage-backend"
   ]
 }
+
+#calling rds module 
+module "rds" {
+  source = "git::https://github.com/afrrooz/terraform-aws-rds.git"
+
+  db_identifier      = var.db_identifier
+  db_name            = var.db_name
+  db_username        = var.db_username
+  db_password        = var.db_password
+  db_instance_class  = var.db_instance_class
+  allocated_storage  = var.db_allocated_storage
+  engine_version     = var.db_engine_version
+  vpc_id             = module.vpc.vpc_id
+  private_subnet_ids = module.vpc.private_subnet_ids
+}

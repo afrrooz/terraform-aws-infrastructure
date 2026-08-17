@@ -67,6 +67,7 @@ variable "key_name" {
   type        = string
 }
 
+# EKS variables
 variable "cluster_name" {
   description = "EKS cluster name"
   type        = string
@@ -95,4 +96,41 @@ variable "min_size" {
 variable "max_size" {
   description = "Maximum number of EKS worker nodes"
   type        = number
+}
+
+# RDS variables
+variable "db_identifier" {
+  description = "RDS database identifier"
+  type        = string
+}
+
+variable "db_name" {
+  description = "RDS database name"
+  type        = string
+}
+
+variable "db_username" {
+  description = "RDS database username"
+  type        = string
+}
+
+variable "db_password" {
+  description = "RDS database password"
+  type        = string
+  sensitive   = true
+}
+
+variable "db_instance_class" {
+  description = "RDS instance class"
+  type        = string
+}
+
+variable "db_allocated_storage" {
+  description = "RDS storage in GB"
+  type        = number
+}
+
+variable "db_engine_version" {
+  description = "PostgreSQL engine version"
+  type        = string
 }

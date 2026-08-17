@@ -49,3 +49,11 @@ node_instance_type = "t3.micro"
 desired_size = 1
 min_size     = 1
 max_size     = 1
+
+# RDS variables
+db_identifier        = "egarrage-postgres"
+db_name              = "egarrage_db"
+db_username          = "egarrage_user"
+db_instance_class    = "db.t3.micro"
+db_allocated_storage = 20
+db_engine_version    = "16"
