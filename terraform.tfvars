@@ -31,7 +31,7 @@ instance_type = "t3.micro"
 instance_name = "devops-ec2"
 
 # Security group variable
-ssh_cidr = "49.43.234.50/32"
+ssh_cidr = "49.43.235.179/32"
 
 # S3 module variables
 bucket_name = "afrrooz-terraform-devops-2026"
